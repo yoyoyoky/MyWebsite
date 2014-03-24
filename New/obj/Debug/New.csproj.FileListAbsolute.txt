@@ -1,0 +1,5 @@
+F:\ASP.NET\New\New\bin\New.dll
+F:\ASP.NET\New\New\bin\New.pdb
+F:\ASP.NET\New\New\obj\Debug\New.dll
+F:\ASP.NET\New\New\obj\Debug\New.pdb
+F:\ASP.NET\New\New\obj\Debug\New.csprojResolveAssemblyReference.cache

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>登陆页面</title>
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+            font-size: xx-large;
+            margin-left: 382px;
+            }
+        .style2
+        {
+            font-size: large;
+        }
+        .style3
+        {
+            font-family: 隶书;
+        }
+        .style4
+        {
+            font-size: x-large;
+        }
+        .style5
+        {
+            color: #FF0000;
+        }
+    </style>
+</head>
+<body style="text-align: center">
+<script language ="javascript">
+    function Check_onclick() {
+        if (Form1.username.value == ""){
+            alert("用户名不能为空！");
+            Form1.username.focus();
+        }
+        else if ('0' <= Form1.username.value.charAt(0) && Form1.username.value.charAt(0)<='9'){
+            alert("用户名首字符不能为数字！");
+            Form1.username.focus();
+        }
+        else if (Form1.Password.value == "") {
+            alert("密码不能为空！");
+            Form1.Password.focus();
+        }
+        else if (Form1.Password.value.length<6){
+            alert("密码至少为6位！");
+            Form1.Password.focus();
+            }
+        else
+            alert("登陆成功！");					
+    }
+</script>
+<form  id="Form1" method="post" action="">
+<div class="style1" 
+    
+    style="border: thick outset #66CCFF; width: 479px; height: 388px; background-image: url('e.jpg'); margin-top: 110px;">
+    <span class="style2">
+    <br /><br /><br />
+    </span><span class="style3"><strong>登陆窗口</strong></span><span class="style2"><br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span><span class="style4"><strong>
+    <br />
+&nbsp;&nbsp; 用户名：</strong></span><input 
+        id="username" type="text" name="Username"
+        class="style2" maxlength="16" /> <span class="style5">* </span><br />
+    <br class="style2" />
+    <span class="style4">&nbsp; <strong>&nbsp;密 码：</strong></span><input id="Password" type="password"  name="Password"
+        class="style2" /> <span class="style5">*<br />
+    </span><span class="style2">&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+<input id="Button1" type="button" value="登陆" onclick="Check_onclick()"  
+        class="style2" style="background-image: url('e.jpg')" />&nbsp;&nbsp;&nbsp;
+<input id="Reset1" type="reset" value="取消" 
+        class="style2" style="background-image: url('e.jpg')" />&nbsp;&nbsp;&nbsp;
+</div>
+</form>
+
+</body>
+<ml>
